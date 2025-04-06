@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Registro</title>
+    <link rel=stylesheet href='../css/register.css'>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.js"></script>
+    <script src="../js/register.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <label for="email"><b>Nombre de Usuario</b></label>
+      <input type="text" placeholder="Introduce nombre de Usuario" name="user" id="user" required>
+
+      <label for="psw"><b>Constraseña</b></label>
+      <input type="password" placeholder="Introduce Constraseña" name="psw" id="pass" required>
+
+      <label id="keyGen"></label>
+      <button type="submit" class="keygen" onclick="secureKeyGen()">Generar contraseña segura</button>
+      <button type="submit" class="registerbtn" onclick="register()">Register</button>
+    </div>
+  </body>
+</html>

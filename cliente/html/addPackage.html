@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Empaquetado</title>
+    <link rel="stylesheet" href="../css/addPackage.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.js"></script>
+    <script src="../js/addPackage.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Agregar archivos</h1>
+      <hr>
+      
+      <label for="archivos"><b>Seleccione archivos a empaquetar</b></label>
+      <input type="file" multiple id="file-input" name="archivos">
+
+      <label for="nombre"><b>Nombre</b></label>
+      <input type="text" id="nombre" placeholder="Introduce el nombre del archivo" name="nombre" required>
+
+      <label for="descripcion"><b>Descripción</b></label>
+      <input type="text" id="descripcion" placeholder="Introduce la descripción del archivo" name="descripcion" required>
+
+      <!-- <label for="fecha"><b>fecha</b></label>
+      <input type="date" id="fecha" placeholder="Introduce una fecha" name="descripcion" required> -->
+
+      <label for="nuevoMetadato"><b>Nuevo metadato</b></label>
+      <input type="text" id="nuevoMetadato" placeholder="Introduce el nombre del metadato">
+      <button type="button" id="botonAddMetadato" onclick="agregarMetadato()">Añadir Metadato</button>
+
+      <div class="clearfix">
+        <button type="button" id="share">Compartir</button>
+      </div>
+
+      <div class="clearfix">
+        <button type="button" class="cancelbtn" id="cancelar">Cancelar</button>
+        <button type="submit" class="signupbtn" id="encriptar">Encriptar</button>
+      </div>
+    </div>
+  </body>
+</html>

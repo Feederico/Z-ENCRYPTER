@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel=stylesheet href='../css/login.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.js"></script>
+    <script src="../js/login.js"></script>
+  </head>
+  <body>
+    <div class="container">
+        <label for="uname" id="userLabel"><b>Nombre de Usuario</b></label>
+        <input type="text" placeholder="Introducir Nombre" id="user" required>
+
+        <label for="psw" id="passLabel"><b>Contraseña</b></label>
+        <input type="password" placeholder="Introducir Contraseña" id="pass" required>
+
+        <button onclick="login()">Login</button>
+    </div>
+
+    <div class="container">
+        <button type="button" class="cancelbtn" onclick="cancelLogin()">Cancel</button>
+        <span class="rgs">¿No estás <a class="registerLink" onclick="goToRegister()">registrado</a>?</span>
+    </div>
+  </body>
+</html>

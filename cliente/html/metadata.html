@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Metadatos</title>
+    <link rel="stylesheet" href="../css/metadata.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.js"></script>
+    <script src="../js/metadata.js"></script>
+  </head>
+  <body>
+    <h1>Metadatos de <label id="nombreArchivo"></label></h1>
+    <table id="tabla">
+      <tr>
+        <td class="tipo">Nombre</td>
+        <td><label id="nombreMeta"></label></td>
+      </tr>
+      <tr>
+        <td class="tipo">Fecha</td>
+        <td><label id="fechaMeta"></label></td>
+      </tr>
+      <tr>
+        <td class="tipo">Descripción</td>
+        <td><label id="descripcionMeta"></label></td>
+      </tr>
+    </table>
+    <button onclick="verifyFile()">Verificar</button>
+    <button onclick="goToFirstWindow()" class="volver">
+      Volver
+    </button>
+  </body>
+</html>
